@@ -2,34 +2,44 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'   // Define "Maven3" in Jenkins Global Tool Config
-        jdk 'JDK11'      // Define "JDK11" in Jenkins Global Tool Config
+        maven 'Maven3'
+        jdk 'JDK11'
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/NJ-QA/jmeter-projects.git'
+                    url: 'https://github.com/your-org/jmeter-projects.git'
             }
         }
 
         stage('Run JMeter Tests') {
             steps {
-                bat 'mvn clean verify'
+                withEnv(["PATH+MAVEN=${tool 'Maven3'}/bin"]) {
+                    sh 'mvn clean verify'
+                }
             }
         }
 
-        stage('Publish HTML Report') {
+        stage('Publish JMeter HTML Report') {
             steps {
-                publishHTML(target: [
-                    allowMissing: true,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'target/jmeter/reports/HRMS_MB',
-                    reportFiles: 'index.html',
-                    reportName: 'HRMS-JMeter-Report'
-                ])
+                script {
+                    // Find the first report folder inside target/jmeter/reports
+                    def reportDir = sh(
+                        script: "ls target/jmeter/reports | head -n 1",
+                        returnStdout: true
+                    ).trim()
+
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: "target/jmeter/reports/${reportDir}",
+                        reportFiles: 'index.html',
+                        reportName: 'JMeter Test Report'
+                    ])
+                }
             }
         }
     }

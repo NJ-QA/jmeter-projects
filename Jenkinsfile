@@ -16,9 +16,9 @@ pipeline {
 
         stage('Run JMeter Tests') {
             steps {
-                withEnv(["PATH+MAVEN=${tool 'Maven3'}/bin"]) {
-                    sh 'mvn clean verify'
-                }
+                
+                    bat 'mvn clean verify'
+                
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
                     ).trim()
 
                     publishHTML([
-                        allowMissing: false,
+                        allowMissing: true,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
                         reportDir: "target/jmeter/reports/${reportDir}",

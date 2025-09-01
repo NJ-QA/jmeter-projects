@@ -2,30 +2,27 @@ pipeline {
     agent any
 
     environment {
-        JMETER_HOME = "${WORKSPACE}/jmeter-docker"
-        CSV_PATH = "data-files/CSVs/leave_application.csv"
-        JMX_FILE = "testFiles/HRMS_MB.jmx"
-        REPORT_DIR = "target/jmeter/reports/HRMS_MB"
+          DOCKER_IMAGE = 'justb4/jmeter:5.6.2'     // Docker image for JMeter
     }
 
     stages {
         stage('Checkout Git Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/NJ-QA/jmeter-projects.git'
+                git url: 'https://github.com/NJ-QA/jmeter-projects.git', branch: 'main', credentialsId: '8253c755-3429-4db7-bac1-a800e7e9edcd'
             }
         }
 
-        stage('Verify CSV') {
+        stage('Verify CSVs') {
             steps {
                 script {
-                    // List files for debug
-                    bat "dir data-files/CSVs"
+                    // List files in CSV folder
+                    bat 'dir "data-files\\CSVs"'
 
-                    // Check CSV exists
+                    // Verify specific CSV exists
                     bat """
-                    if exist "${CSV_PATH}" (
+                    if exist "data-files\\CSVs\\leave_application.csv" (
                         echo CSV file exists.
-                        type "${CSV_PATH}"
+                        type "data-files\\CSVs\\leave_application.csv"
                     ) else (
                         echo CSV file NOT FOUND!
                         exit /b 1
@@ -38,16 +35,25 @@ pipeline {
         stage('Run JMeter in Docker') {
             steps {
                 script {
-                    // Pull JMeter Docker image
-                    bat "docker pull justb4/jmeter:5.6.2"
-
-                    // Run JMeter container
+                    // Mount workspace and run JMeter in Docker
                     bat """
-                    docker run --rm ^
-                        -v "${WORKSPACE}:/jmeter" ^
-                        -w /jmeter ^
-                        justb4/jmeter:5.6.2 ^
-                        -n -t ${JMX_FILE} -l target/jmeter/results/result.jtl -j target/jmeter/logs/jmeter.log -e -o ${REPORT_DIR}
+                    docker run --rm -v "%cd%:/jmeter" -w /jmeter ${DOCKER_IMAGE} \
+                        -n -t target\\jmeter\\testFiles\\HRMS_MB.jmx \
+                        -l target\\jmeter\\results\\HRMS_MB.csv \
+                        -j target\\jmeter\\logs\\HRMS_MB.log \
+                        -f
+                    """
+                }
+            }
+        }
+
+        stage('Generate HTML Report') {
+            steps {
+                script {
+                    bat """
+                    docker run --rm -v "%cd%:/jmeter" -w /jmeter ${DOCKER_IMAGE} \
+                        -g target\\jmeter\\results\\HRMS_MB.csv \
+                        -o target\\jmeter\\reports\\HRMS_MB
                     """
                 }
             }
@@ -56,15 +62,11 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'target/jmeter/reports/**', allowEmptyArchive: true
-            archiveArtifacts artifacts: 'target/jmeter/results/**', allowEmptyArchive: true
-            archiveArtifacts artifacts: 'target/jmeter/logs/**', allowEmptyArchive: true
-        }
-        success {
-            echo 'JMeter Docker test completed successfully.'
+            archiveArtifacts artifacts: 'target\\jmeter\\reports\\HRMS_MB\\**\\*', allowEmptyArchive: true
+            echo "JMeter test finished. Check reports and logs."
         }
         failure {
-            echo 'JMeter Docker test failed. Check CSV path, JMX, or Docker configuration.'
+            echo "JMeter Docker test failed. Check CSV path, JMX, or Docker configuration."
         }
     }
 }

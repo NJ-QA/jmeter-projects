@@ -14,7 +14,6 @@ pipeline {
             }
         }
 
-        stages {
         stage('Check CSV File') {
             steps {
                 // This will print the contents of your CSV file in Jenkins console

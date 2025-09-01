@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-org/jmeter-projects.git'
+                    url: 'https://github.com/NJ-QA/jmeter-projects.git'
             }
         }
 

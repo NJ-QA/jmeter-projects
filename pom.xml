@@ -13,7 +13,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>3.12.0</version>
+                <version>3.8.0</version>
                 <executions>
                     <!-- Step 1: Generate config.json -->
                     <execution>

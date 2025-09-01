@@ -14,6 +14,14 @@ pipeline {
             }
         }
 
+        stage('Check CSV File') {
+            steps {
+                // This will print the contents of your CSV file in Jenkins console
+                bat 'dir data-files\\CSVs'
+                bat 'type data-files\\CSVs\\leave_application.csv'
+            }
+        }
+
         stage('Run JMeter Tests') {
             steps {
                 

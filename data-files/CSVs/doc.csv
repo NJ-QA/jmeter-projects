@@ -1,5 +1,5 @@
 companyId,documentType,filePath
-87,PAN,images/PAN.png
-88,GST,images/GST.png
+87,PAN,data-files/images/PAN.png
+88,GST,data-files/images/GST.png
 ,,
--5,AADHAAR,images/Aadhar.png
+-5,AADHAAR,data-files/images/Aadhar.png

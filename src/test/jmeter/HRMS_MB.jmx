@@ -58,7 +58,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -79,7 +79,7 @@ vars.put(&quot;dynamicPhone&quot;, phonePrefix + random)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="User Login">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="User Login" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/user/login</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -110,14 +110,14 @@ vars.put(&quot;dynamicPhone&quot;, phonePrefix + random)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">jwtToken</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.jwtToken</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NO_TOKEN_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -205,7 +205,7 @@ if (storedToken == null || storedToken.trim().isEmpty()) {
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Register post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Register post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company/register</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -230,7 +230,7 @@ if (storedToken == null || storedToken.trim().isEmpty()) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -243,7 +243,7 @@ if (storedToken == null || storedToken.trim().isEmpty()) {
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company register PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company register PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -275,7 +275,7 @@ vars.put(&quot;companySize&quot;, companySize)
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Company Id Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Company Id Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">companyId</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.companyId </stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
@@ -283,7 +283,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Refersh Token">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Refersh Token" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/user/login</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -317,7 +317,7 @@ vars.put(&quot;companySize&quot;, companySize)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Refresh token Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Refresh token Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">jwtToken</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.jwtToken</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
@@ -325,7 +325,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="User-ID get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="User-ID get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/user</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -351,7 +351,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company register get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company register get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -377,7 +377,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company register update">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company register update" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -413,7 +413,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="All industry get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="All industry get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company/industry-types</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -438,32 +438,7 @@ vars.put(&quot;companySize&quot;, companySize)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company register delete" enabled="false">
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <stringProp name="HTTPSampler.method">DELETE</stringProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-            <collectionProp name="Arguments.arguments"/>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/locations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -498,7 +473,7 @@ vars.put(&quot;companySize&quot;, companySize)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company location PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company location PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -547,14 +522,14 @@ vars.put(&quot;companyAddressRequestBody&quot;, requestBody)
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Company location Id Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Company location Id Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">companyLocationId</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/locations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -584,7 +559,7 @@ vars.put(&quot;companyAddressRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Location put" enabled="true">
           <stringProp name="HTTPSampler.domain">hrms.modulobytes.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/locations/${companyLocationId} </stringProp>
@@ -678,7 +653,7 @@ log.info(&quot;✅ PUT Body:\n&quot; + vars.get(&quot;companyAddressPutBody&quot
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/legal-info/submit</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -714,7 +689,7 @@ log.info(&quot;✅ PUT Body:\n&quot; + vars.get(&quot;companyAddressPutBody&quot
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -752,7 +727,7 @@ vars.put(&quot;professionalTaxState&quot;, ptState)
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -792,7 +767,7 @@ log.info(&quot;✅ Company Legal POST Body:\n&quot; + jsonBody)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/legal-info</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -822,7 +797,7 @@ log.info(&quot;✅ Company Legal POST Body:\n&quot; + jsonBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Legal Info put" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/legal-info</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -857,7 +832,7 @@ log.info(&quot;✅ Company Legal POST Body:\n&quot; + jsonBody)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info put PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info put PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -890,7 +865,7 @@ vars.put(&quot;professionalTaxState&quot;, ptState)
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info put PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Company legal info put PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -924,7 +899,7 @@ vars.put(&quot;companyLegalPutBody&quot;, jsonBody)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Documents Upload post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Documents Upload post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/documents/upload</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -968,7 +943,7 @@ vars.put(&quot;companyLegalPutBody&quot;, jsonBody)
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -985,7 +960,7 @@ vars.put(&quot;companyLegalPutBody&quot;, jsonBody)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Documents upload PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Documents upload PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -1013,7 +988,7 @@ if (!filePath || filePath.trim().isEmpty()) {
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Document Id Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Document Id Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">documentId</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
@@ -1158,7 +1133,7 @@ if (!filePath || filePath.trim().isEmpty()) {
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/banks</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -1207,7 +1182,7 @@ if (!filePath || filePath.trim().isEmpty()) {
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get (IFSC)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get (IFSC)" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/banks/ifsc-codes</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -1286,7 +1261,7 @@ if (!filePath || filePath.trim().isEmpty()) {
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get (state and city)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Banks get (state and city)" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/banks/search</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -1330,7 +1305,7 @@ if (!filePath || filePath.trim().isEmpty()) {
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/social-links</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1403,7 +1378,7 @@ if (!url || url.trim().isEmpty() || !(url.startsWith(&quot;http://&quot;) || url
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/social-links</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1429,7 +1404,7 @@ if (!url || url.trim().isEmpty() || !(url.startsWith(&quot;http://&quot;) || url
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link put" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/social-links/${socialLinkId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1487,7 +1462,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link delete by id">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Social Link delete by id" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/social-links/${socialLinkId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1513,7 +1488,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Media post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Media post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company-media</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -1549,7 +1524,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -1573,7 +1548,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company-media?mediaType=Banner&amp;isActive=false</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1603,7 +1578,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media get (view)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media get (view)" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company-media?mediaType=Banner&amp;isActive=true</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1633,7 +1608,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Media put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Media put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/company-media/${createdMediaId}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -1687,7 +1662,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company media delete" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api//company-media/${createdMediaId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1717,7 +1692,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/designations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -1751,7 +1726,7 @@ vars.put(&quot;socialPutRequestBody&quot;, requestBody)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Designation PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Designation PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -1774,14 +1749,14 @@ vars.put(&quot;designationRequestBody&quot;, requestBody)
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Designation Id Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Designation Id Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">designationId</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/designations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -1810,7 +1785,7 @@ vars.put(&quot;designationRequestBody&quot;, requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Designation put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/designations/${designationId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -1844,7 +1819,7 @@ vars.put(&quot;designationRequestBody&quot;, requestBody)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Designation put PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Designation put PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -1907,7 +1882,7 @@ vars.put(&quot;designationUpdateBody&quot;, requestBody)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Highest qualification PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Highest qualification PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -1938,14 +1913,14 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
 </stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Highest qualification Id Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Highest qualification Id Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">qualificationId</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/highest-qualification</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1957,7 +1932,7 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -1975,7 +1950,7 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications put" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/highest-qualification</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2017,7 +1992,7 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Highest Qualifications delete" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/highest-qualification/${qualificationId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2047,7 +2022,7 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/worker-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2086,7 +2061,7 @@ log.info(&quot;📤 Sending Qualification Request:\n${vars.get(&quot;qualificati
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Worker type PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Worker type PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2123,7 +2098,7 @@ vars.put(&quot;finalName&quot;, personName.toUpperCase())
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/worker-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2153,7 +2128,7 @@ vars.put(&quot;finalName&quot;, personName.toUpperCase())
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Worker type put" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/worker-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -2188,7 +2163,7 @@ vars.put(&quot;finalName&quot;, personName.toUpperCase())
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Worker type put PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Worker type put PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2220,7 +2195,7 @@ vars.put(&quot;workerTypePutBody&quot;, new JsonBuilder(requestBody).toPrettyStr
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config post" enabled="true">
           <stringProp name="HTTPSampler.domain"> </stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-code</stringProp>
@@ -2295,7 +2270,7 @@ log.info(&quot;✅ Employee Code POST Body: \n&quot; + jsonBody)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config get" enabled="true">
           <stringProp name="HTTPSampler.domain"> </stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-code</stringProp>
@@ -2326,7 +2301,7 @@ log.info(&quot;✅ Employee Code POST Body: \n&quot; + jsonBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config put" enabled="true">
           <stringProp name="HTTPSampler.domain"> </stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-code/${employeeCodeId}</stringProp>
@@ -2393,7 +2368,7 @@ log.info(&quot;✅ Employee Code PUT Body:\n&quot; + jsonPutBody)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee ID Config delete" enabled="true">
           <stringProp name="HTTPSampler.domain"> </stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-code/${employeeCodeId}</stringProp>
@@ -2424,7 +2399,7 @@ log.info(&quot;✅ Employee Code PUT Body:\n&quot; + jsonPutBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/blood-groups</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2469,7 +2444,7 @@ log.info(&quot;✅ Employee Code PUT Body:\n&quot; + jsonPutBody)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/blood-groups</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -2498,7 +2473,7 @@ log.info(&quot;✅ Employee Code PUT Body:\n&quot; + jsonPutBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Blood group put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/blood-groups</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -2537,7 +2512,7 @@ log.info(&quot;✅ Employee Code PUT Body:\n&quot; + jsonPutBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/gender</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2622,7 +2597,7 @@ log.info(&quot;✅ Gender POST Body:\n&quot; + requestBody)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/gender</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -2651,7 +2626,7 @@ log.info(&quot;✅ Gender POST Body:\n&quot; + requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Gender put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/gender</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -2722,7 +2697,7 @@ if (!genderId) {
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relation</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2792,7 +2767,7 @@ log.info(&quot;✅ Generated Relation POST Body:\n&quot; + requestBody)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relation</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -2821,7 +2796,7 @@ log.info(&quot;✅ Generated Relation POST Body:\n&quot; + requestBody)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relation put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relation?status=false</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -2891,7 +2866,7 @@ if (!relationId) {
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2967,7 +2942,7 @@ log.info(&quot;🛠️ Skill POST request: ${vars.get(&quot;skillRequestBody&quo
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -3003,7 +2978,7 @@ log.info(&quot;🛠️ Skill POST request: ${vars.get(&quot;skillRequestBody&quo
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-type</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -3060,7 +3035,7 @@ log.info(&quot;💡 PUT Body:\n&quot; + vars.get(&quot;skillUpdateBody&quot;))
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill type delete" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-type/${idToDelete}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -3117,7 +3092,7 @@ log.info(&quot;🗑️ Preparing to delete skill-type with ID: ${id}&quot;)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-level</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3188,7 +3163,7 @@ log.info(&quot;📝 Skill Level POST Body:\n&quot; + vars.get(&quot;skillLevelBo
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-level</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -3217,7 +3192,7 @@ log.info(&quot;📝 Skill Level POST Body:\n&quot; + vars.get(&quot;skillLevelBo
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-level</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -3285,7 +3260,7 @@ log.info(&quot;🛠 PUT SkillLevel ID=${id}\n${vars.get(&quot;skillLevelUpdateBo
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Skill level delete" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/skill-level/${createdSkillLevelId} </stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -3331,7 +3306,7 @@ log.info(&quot;🗑️ Preparing to DELETE SkillLevel with ID=${id}&quot;)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-plans</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -3431,14 +3406,14 @@ log.info(&quot;🗑️ Preparing to DELETE SkillLevel with ID=${id}&quot;)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Leave plan code Extractor">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Leave plan code Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">extractedCode </stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs"> $.code</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Leave plan PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Leave plan PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -3483,7 +3458,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-plans</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -3511,7 +3486,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan get (view)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan get (view)" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-plans/view/${extractedCode}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -3548,7 +3523,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Plan put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-plans/${extractedCode}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -3649,7 +3624,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-type-configurations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3699,7 +3674,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-type-configurations</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -3727,7 +3702,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Type Configurations put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-type-configurations</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -3770,7 +3745,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-types</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3816,7 +3791,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-types</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -3845,7 +3820,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-types</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -3891,7 +3866,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Regular Leave Type delete" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-types</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -3930,7 +3905,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-accrual-rules</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3979,7 +3954,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-accrual-rules</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -4008,7 +3983,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Accrual Leave Type put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-accrual-rules</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -4113,7 +4088,7 @@ log.info(&quot;✅ Generated Leave Plan Code: ${uniqueCode}&quot;)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Leave application rules PreProcessor" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Leave application rules PreProcessor">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -4148,7 +4123,7 @@ def isActive = vars.get(&quot;isActive&quot;)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Application Rules get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Application Rules get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-application-rules?leavePlanCode=${uniqueCode}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -4176,7 +4151,7 @@ def isActive = vars.get(&quot;isActive&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Application Rules put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Leave Application Rules put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/leave-application-rules</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -4265,7 +4240,7 @@ def isActive = vars.get(&quot;isActive&quot;)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee post bulk">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee post bulk" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee/bulk/upload</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
@@ -4446,7 +4421,7 @@ log.info(&quot;✅ Generated employee JSON for: ${fullName} (${maritalStatus})&q
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee get (all)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee get (all)" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -4802,100 +4777,6 @@ log.info(&quot;✅ Employee Status Body Prepared:\n&quot; + jsonBody)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Address post" enabled="false">
-          <stringProp name="HTTPSampler.domain"> </stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-address?employeeId=${employeeId}</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${employeeAddressBody}&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Company-ID</stringProp>
-                <stringProp name="Header.value">${companyId}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">employeeId</stringProp>
-                <stringProp name="Header.value">${employeeId}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Employee address PreProcessor" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">import java.util.UUID
-import java.util.Random
-import groovy.json.JsonBuilder
-
-// Generate unique suffix
-String suffix = UUID.randomUUID().toString().substring(0, 5)
-
-// === CSV Inputs ===
-String employeeId = vars.get(&quot;employeeId&quot;)
-String addressTypeValid = vars.get(&quot;addressTypeValid&quot;)
-String line1Valid = vars.get(&quot;line1Valid&quot;)
-String line2 = vars.get(&quot;line2&quot;)
-String line2Long = vars.get(&quot;line2Long&quot;)
-String cityValid = vars.get(&quot;cityValid&quot;)
-String stateIdValid = vars.get(&quot;stateIdValid&quot;)
-String countryIdValid = vars.get(&quot;countryIdValid&quot;)
-String postalCodeValid = vars.get(&quot;postalCodeValid&quot;)
-
-// === Dynamic Data Handling ===
-String ea_addressType = addressTypeValid == &quot;true&quot; ? &quot;present&quot; : null
-String ea_line1 = line1Valid == &quot;true&quot; ? &quot;Flat No 123, Block A&quot; : null
-String ea_line2 = line2 == &quot;true&quot; ? &quot;Suite 10&quot; : (line2Long == &quot;true&quot; ? &quot;L&quot;.repeat(110) : null)
-String ea_city = cityValid == &quot;true&quot; ? &quot;Mumbai&quot; : null
-Integer ea_stateId = stateIdValid == &quot;true&quot; ? 5 : null
-Integer ea_countryId = countryIdValid == &quot;true&quot; ? 91 : null
-String ea_postalCode = postalCodeValid == &quot;true&quot; ? String.format(&quot;%06d&quot;, new Random().nextInt(999999)) : null
-
-// === Build Final JSON Object ===
-def address = [:]
-address[&quot;addressType&quot;] = ea_addressType
-address[&quot;line1&quot;] = ea_line1
-address[&quot;line2&quot;] = ea_line2
-address[&quot;city&quot;] = ea_city
-address[&quot;stateId&quot;] = ea_stateId
-address[&quot;countryId&quot;] = ea_countryId
-address[&quot;postalCode&quot;] = ea_postalCode
-
-def requestBody = [
-    employeeId: employeeId as int,
-    addresses: [address]
-]
-
-// Store as JSON string
-vars.put(&quot;employeeAddressBody&quot;, new JsonBuilder(requestBody).toPrettyString())
-</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications</stringProp>
@@ -5022,7 +4903,7 @@ vars.put(&quot;issueDate&quot;, issueDate.format(formatter))
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification get (by emp Id)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification get (by emp Id)" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications?employeeId=${employeeId}&amp;page=0&amp;size=10&amp;sort=asc</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5122,7 +5003,7 @@ vars.put(&quot;issueDate&quot;, issueDate.format(formatter))
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification get (view)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification get (view)" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications/view/${certificationId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5222,7 +5103,7 @@ vars.put(&quot;issueDate&quot;, issueDate.format(formatter))
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification put ">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification put " enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -5359,7 +5240,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification delete" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications/${certificationId}</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -5399,7 +5280,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relatives?employeeId=${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5458,7 +5339,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relatives/${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5487,7 +5368,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Relative put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/relatives/${extractedRelativeId}?employeeId=${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -5544,7 +5425,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-skills?employeeId=${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5593,7 +5474,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-skills?employeeId=${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5622,7 +5503,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill put" enabled="true">
           <stringProp name="HTTPSampler.domain">hrms.modulobytes.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-skills/${employeeSkillId}?employeeId=${employeeId}</stringProp>
@@ -5664,7 +5545,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee skill delete" enabled="true">
           <stringProp name="HTTPSampler.domain">hrms.modulobytes.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-skills/${employeeSkillId}?employeeId=${employeeId} </stringProp>
@@ -5695,7 +5576,7 @@ vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-bank-details</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5759,7 +5640,7 @@ vars.put(&quot;uniqueAccountNumber&quot;, uniqueAccountNumber)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-bank-details/${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -5788,7 +5669,7 @@ vars.put(&quot;uniqueAccountNumber&quot;, uniqueAccountNumber)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-bank-details/${bankPutId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -5864,7 +5745,7 @@ vars.put(&quot;employeeId&quot;, empId)
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee bank details delete" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-bank-details/${employeeId}/${createdBankDetailId} </stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -5912,64 +5793,7 @@ if (!empId || !bankDetailId) {
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee reporting lines" enabled="false">
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/employee-reporting-lines</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-    &quot;managerId&quot;: ${managerEmployeeId},&#xd;
-    &quot;managerTypeId&quot;: ${managerTypeId},&#xd;
-    &quot;employeeIds&quot;: [${employeeId}],&#xd;
-    &quot;endDate&quot;: &quot;${endDate}&quot;&#xd;
-}&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Company-ID</stringProp>
-                <stringProp name="Header.value">${companyId}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">// Randomly select 1 or 2 for managerTypeId
-def managerTypeId = (1...2).toList().get(new Random().nextInt(2))
-vars.put(&quot;managerTypeId&quot;, managerTypeId.toString())
-
-// Set endDate (fixed for now; you can randomize later if needed)
-vars.put(&quot;endDate&quot;, &quot;2026-02-02&quot;)
-
-log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
-</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo post" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/profile-photo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6026,7 +5850,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo get (employee id)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo get (employee id)" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/profile-photo/${employeeId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -6084,7 +5908,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo view ">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo view " enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/profile-photo/view/${employeeId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -6142,7 +5966,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo put" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/profile-photo</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -6192,7 +6016,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Profile photo delete" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/profile-photo/${employeeId}</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -6234,7 +6058,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule Events post">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule Events post" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/events</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6292,7 +6116,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event get" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/events?eventType=MEETING&amp;participantId=${employeeId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -6321,7 +6145,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event get (by id)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event get (by id)" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/events/${createdEventId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -6350,7 +6174,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event put">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event put" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/events/${createdEventId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
@@ -6414,7 +6238,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event delete">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Schedule event delete" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/events/${createdEventId}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
@@ -6443,89 +6267,7 @@ log.info(&quot;✅ Manager Type ID Selected: &quot; + managerTypeId)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Country post" enabled="false">
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/countries</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${countryJson}&#xd;
-</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">import org.apache.commons.lang3.RandomStringUtils
-import java.util.Random
-
-def name1 = vars.get(&quot;name1&quot;)
-def name2 = vars.get(&quot;name2&quot;)
-
-def rand = new Random()
-def phonecode1 = 100 + rand.nextInt(900)
-def phonecode2 = 100 + rand.nextInt(900)
-while (phonecode1 == phonecode2) {
-    phonecode2 = 100 + rand.nextInt(900)
-}
-
-def iso1 = RandomStringUtils.randomAlphabetic(2).toUpperCase()
-def iso2 = RandomStringUtils.randomAlphabetic(2).toUpperCase()
-while (iso1 == iso2) {
-    iso2 = RandomStringUtils.randomAlphabetic(2).toUpperCase()
-}
-
-def suffix1 = RandomStringUtils.randomAlphanumeric(5).toUpperCase()
-def suffix2 = RandomStringUtils.randomAlphanumeric(5).toUpperCase()
-
-def finalName1 = &quot;${name1}_${suffix1}&quot;
-def finalName2 = &quot;${name2}_${suffix2}&quot;
-
-def countryJson = &quot;&quot;&quot;
-[
-  {
-    &quot;isoCode&quot;: &quot;${iso1}&quot;,
-    &quot;name&quot;: &quot;${finalName1}&quot;,
-    &quot;phonecode&quot;: ${phonecode1}
-  },
-  {
-    &quot;isoCode&quot;: &quot;${iso2}&quot;,
-    &quot;name&quot;: &quot;${finalName2}&quot;,
-    &quot;phonecode&quot;: ${phonecode2}
-  }
-]
-&quot;&quot;&quot;
-
-vars.put(&quot;countryJson&quot;, countryJson)
-</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Countries get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Countries get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/countries</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -6555,7 +6297,7 @@ vars.put(&quot;countryJson&quot;, countryJson)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Countries get by id">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Countries get by id" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/countries/2</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -6585,82 +6327,7 @@ vars.put(&quot;countryJson&quot;, countryJson)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="State post" enabled="false">
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/states</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${stateJson}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">import org.apache.commons.lang3.RandomStringUtils
-
-// Fetch State-specific CSV Variables
-def stateName1 = vars.get(&quot;stateName1&quot;)
-def stateName2 = vars.get(&quot;stateName2&quot;)
-def stateCountryId1 = vars.get(&quot;stateCountryId1&quot;)
-def stateCountryId2 = vars.get(&quot;stateCountryId2&quot;)
-
-// Check for missing data
-if (!stateName1 || !stateCountryId1 || !stateName2 || !stateCountryId2) {
-    throw new Exception(&quot;State CSV data missing!&quot;)
-}
-
-// Randomize names if needed
-def randomSuffix1 = RandomStringUtils.randomNumeric(3)
-def randomSuffix2 = RandomStringUtils.randomNumeric(3)
-def randomStateName1 = stateName1 + &quot;_&quot; + randomSuffix1
-def randomStateName2 = stateName2 + &quot;_&quot; + randomSuffix2
-
-// Build JSON
-def stateJson = &quot;&quot;&quot;
-[
-  {
-    &quot;name&quot;: &quot;${randomStateName1}&quot;,
-    &quot;countryId&quot;: ${stateCountryId1}
-  },
-  {
-    &quot;name&quot;: &quot;${randomStateName2}&quot;,
-    &quot;countryId&quot;: ${stateCountryId2}
-  }
-]
-&quot;&quot;&quot;
-
-vars.put(&quot;stateJson&quot;, stateJson)
-log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
-</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="All-States-countryId-API get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="All-States-countryId-API get" enabled="true">
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -6686,7 +6353,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PF Eligibility">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PF Eligibility" enabled="true">
           <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/pf_eligibility</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6721,7 +6388,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Sign Up CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Sign Up CSV" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="filename">data-files/CSVs/users.csv</stringProp>
@@ -6733,7 +6400,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="variableNames">firstName,middleName,lastName,emailPrefix,countryCode,phoneNumber,dateOfBirth,password,confirmPassword,industryType</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Tax detail CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Tax detail CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/tax.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">companyId,panNumber,tanNumber,gstNumber,crcNumber,msmeRegistrationNumber,professionalTaxRegistrationNumber,professionalTaxState</stringProp>
@@ -6745,7 +6412,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Document CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Document CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/doc.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">companyId,documentType,filePath</stringProp>
@@ -6757,7 +6424,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Document Update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Document Update" enabled="true">
           <stringProp name="filename">data-files/CSVs/doc_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">filePath,documentId,documentType</stringProp>
@@ -6769,7 +6436,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Social Link CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Social Link CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/social link.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">companyId,platform,url</stringProp>
@@ -6781,7 +6448,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Country CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Country CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/country.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name1,name2</stringProp>
@@ -6793,7 +6460,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="State CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="State CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/state.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">stateName1,stateCountryId1,stateName2,stateCountryId2</stringProp>
@@ -6805,7 +6472,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Address CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Address CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/address.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">addressLine1,addressLine2,landmark,postalCode,cityId,stateId,countryId,name,locationCode,timeZoneId,groupEmail,longitude,latitude  </stringProp>
@@ -6817,7 +6484,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Add employee CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Add employee CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/employee_add.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,maritalStatus,typeName</stringProp>
@@ -6829,7 +6496,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee Address CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee Address CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/employee_address.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">employeeId,addressType,line1,line2,city,stateId,countryId,postalCode</stringProp>
@@ -6841,7 +6508,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="QualificationName CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="QualificationName CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/qualificationName.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">qualificationName</stringProp>
@@ -6853,7 +6520,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Worker type update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Worker type update" enabled="true">
           <stringProp name="filename">data-files/CSVs/worker_type_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,description</stringProp>
@@ -6865,7 +6532,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Emp Certification CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Emp Certification CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/empcertification.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">employeeId,name,issuingOrganization,credentialId,credentialUrl,filePath</stringProp>
@@ -6877,7 +6544,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill type">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill type" enabled="true">
           <stringProp name="filename">data-files/CSVs/skill_type.txt</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,description,active</stringProp>
@@ -6889,7 +6556,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill type update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill type update" enabled="true">
           <stringProp name="filename">data-files/CSVs/skill_type_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,description</stringProp>
@@ -6901,7 +6568,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill level">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill level" enabled="true">
           <stringProp name="filename">data-files/CSVs/add_skill_level.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,description,active</stringProp>
@@ -6913,7 +6580,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill level update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Skill level update" enabled="true">
           <stringProp name="filename">data-files/CSVs/skill_level_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,description,active</stringProp>
@@ -6925,7 +6592,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee skill post">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee skill post" enabled="true">
           <stringProp name="filename">data-files/CSVs/emp_skill.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">employeeId,skillName,skillTypeId</stringProp>
@@ -6937,7 +6604,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee skill update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee skill update" enabled="true">
           <stringProp name="filename">data-files/CSVs/emp_skill_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">employeeId,employeeSkillId,updatedSkillName,skillTypeId,skillLevelId </stringProp>
@@ -6949,7 +6616,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Address update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Address update" enabled="true">
           <stringProp name="filename">data-files/CSVs/company_address_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,locationCode,addressLine1,addressLine2,landmark,postalCode,cityId,stateId,countryId,timeZoneId,groupEmail,longitude,latitude</stringProp>
@@ -6961,7 +6628,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Designation post">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Designation post" enabled="true">
           <stringProp name="filename">data-files/CSVs/designation.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">designationName,description,parentId</stringProp>
@@ -6973,7 +6640,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Designation update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Designation update" enabled="true">
           <stringProp name="filename">data-files/CSVs/designation_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">designationName,description,parentId</stringProp>
@@ -6985,7 +6652,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Legal Info post">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company Legal Info post" enabled="true">
           <stringProp name="filename">data-files/CSVs/company_legal_info.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">legalName,panNumber,tanNumber,gstNumber,incorporationDate,businessStructure,sector,entityType,natureOfBusiness,professionalTaxState,crcNumber,msmeRegistrationNumber,professionalTaxRegistrationNumber,companyLocationId</stringProp>
@@ -6997,7 +6664,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company media post">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company media post" enabled="true">
           <stringProp name="filename">data-files/CSVs/media_type.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">filePath,mediaType,isActive</stringProp>
@@ -7009,7 +6676,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee code config post">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee code config post" enabled="true">
           <stringProp name="filename">data-files/CSVs/employee_code.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,numberOfDigits,nextSequenceNumber,description</stringProp>
@@ -7021,7 +6688,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee code config put">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Employee code config put" enabled="true">
           <stringProp name="filename">data-files/CSVs/employee_code_put.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">name,numberOfDigits,nextSequenceNumber,description</stringProp>
@@ -7033,7 +6700,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Blood group update">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Blood group update" enabled="true">
           <stringProp name="filename">data-files/CSVs/blood_group_update.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">updatedBloodGroupName,updatedBloodGroupDesc</stringProp>
@@ -7045,7 +6712,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Event CSV ">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Event CSV " enabled="true">
           <stringProp name="filename">data-files/CSVs/event.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">eventType,meetingType,title,description,participantIds,notificationTypes,repeatPattern,startTime,endTime,platform,eventLink</stringProp>
@@ -7057,7 +6724,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Banks CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Banks CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/banks.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">ifscCode</stringProp>
@@ -7069,7 +6736,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Leave Plan CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Leave Plan CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/leave_plan.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">code,name,leaveGrantPolicy,autoGeneratePolicy,calendarStartMonth,description,maxDays,carryForwardDays,isActive,filePath</stringProp>
@@ -7081,7 +6748,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Leave Type Config CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Leave Type Config CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/leave_type_config.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">leaveTypeCode,leaveCategory,name,description,isActive</stringProp>
@@ -7093,7 +6760,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Regular Leave Type CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Regular Leave Type CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/regular-leave.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">subType,maxConsecutiveDays,maxDaysPerMonth,minDaysBetweenApplications,requiresAttachment,attachmentRequiredAfterDays,active</stringProp>
@@ -7105,7 +6772,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Accrual Leave Type CSV">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Accrual Leave Type CSV" enabled="true">
           <stringProp name="filename">data-files/CSVs/aacrual_leave.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="variableNames">yearlyQuota,accrualDayOfMonth,expiresInDays,maxBalanceDays,allowExtraLeave,extraDaysWithinYear,extraDaysBeyondYear,isActive</stringProp>
@@ -7129,7 +6796,7 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -7166,143 +6833,6 @@ log.info(&quot;✅ Final State JSON:\n&quot; + stateJson)
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Certification put " enabled="false">
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">https://hrms.modulobytes.com/hrms/api/certifications</stringProp>
-          <stringProp name="HTTPSampler.method">PUT</stringProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
-          <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
-            <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\jaind\OneDrive\Pictures\Screenshots\t.png" elementType="HTTPFileArg">
-                <stringProp name="File.mimetype">image/png</stringProp>
-                <stringProp name="File.path">C:\Users\jaind\OneDrive\Pictures\Screenshots\t.png</stringProp>
-                <stringProp name="File.paramname">file</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="employeeId" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${employeeId}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">employeeId</stringProp>
-              </elementProp>
-              <elementProp name="name" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${name}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">name</stringProp>
-              </elementProp>
-              <elementProp name="issuingOrganization" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${issuingOrganization}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">issuingOrganization</stringProp>
-              </elementProp>
-              <elementProp name="expirationDate" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${expirationDate}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">expirationDate</stringProp>
-              </elementProp>
-              <elementProp name="credentialId" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${credentialId}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">credentialId</stringProp>
-              </elementProp>
-              <elementProp name="credentialUrl" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${credentialUrl}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">credentialUrl</stringProp>
-              </elementProp>
-              <elementProp name="issueDate" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${issueDate}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">issueDate</stringProp>
-              </elementProp>
-              <elementProp name="file" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${filePath}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">file</stringProp>
-                <stringProp name="HTTPArgument.content_type">file</stringProp>
-              </elementProp>
-              <elementProp name="certificationId" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${certificationId}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">certificationId</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwtToken}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Accept</stringProp>
-                <stringProp name="Header.value">*/*</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Company-ID</stringProp>
-                <stringProp name="Header.value">${companyId}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">image/png</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Employee certifiction put PreProcessor" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-
-// Today&apos;s date + 30 days
-def futureDate = LocalDate.now().plusDays(30)
-def issueDate = LocalDate.now().minusDays(10)
-
-def formatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;)
-
-vars.put(&quot;expirationDate&quot;, futureDate.format(formatter))
-vars.put(&quot;issueDate&quot;, issueDate.format(formatter))
-// Generate dummy values or fetch from previous samplers
-//vars.put(&quot;employeeId&quot;, ${employeeId})
-vars.put(&quot;employeeId&quot;, empId.toString())
-vars.put(&quot;certificationId&quot;, ${certificationId})
-vars.put(&quot;certificateName&quot;, &quot;java7&quot;)
-vars.put(&quot;issuingOrganization&quot;, &quot;modu&quot;)
-vars.put(&quot;issueDate&quot;, &quot;2025-04-10&quot;)
-vars.put(&quot;expirationDate&quot;, &quot;2025-12-10&quot;)
-vars.put(&quot;credentialId&quot;, &quot;dsfewwe&quot;)
-vars.put(&quot;credentialUrl&quot;, &quot;http://sdvsvsv.com&quot;)
-// For file, provide absolute path in JMeter manually in sampler
-</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
       </hashTree>
     </hashTree>
   </hashTree>

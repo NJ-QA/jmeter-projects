@@ -23,12 +23,12 @@ pipeline {
         stage('Publish HTML Report') {
             steps {
                 publishHTML(target: [
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'target/jmeter/reports',
                     reportFiles: 'index.html',
-                    reportName: 'HRMS JMeter Report'
+                    reportName: 'HRMS-JMeter-Report'
                 ])
             }
         }

@@ -26,7 +26,7 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
-                    reportDir: 'target/jmeter/reports',
+                    reportDir: 'target/jmeter/reports/HRMS_MB',
                     reportFiles: 'index.html',
                     reportName: 'HRMS-JMeter-Report'
                 ])

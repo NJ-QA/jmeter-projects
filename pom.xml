@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hrms</groupId>
+    <groupId>com.example</groupId>
     <artifactId>hrms-jmeter-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <name>HRMS JMeter Tests</name>
 
     <build>
         <plugins>
@@ -15,32 +15,47 @@
                 <artifactId>jmeter-maven-plugin</artifactId>
                 <version>3.8.0</version>
                 <executions>
+                    <!-- Step 1: Generate config.json -->
+                    <execution>
+                        <id>configuration</id>
+                        <goals>
+                            <goal>configure</goal>
+                        </goals>
+                    </execution>
+                    <!-- Step 2: Run JMeter tests -->
                     <execution>
                         <id>jmeter-tests</id>
-                        <phase>verify</phase>
                         <goals>
                             <goal>jmeter</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <!-- Point to your JMX scripts -->
-                    <testFilesIncluded>
-                        <jMeterTestFile>jmeter-scripts/HRMS_MB.jmx</jMeterTestFile>
-                    </testFilesIncluded>
-                    <!-- Where reports will be generated -->
-                    <resultsFileFormat>jtl</resultsFileFormat>
-                    <resultsDirectory>results</resultsDirectory>
-                    <reportDirectory>target/jmeter/reports</reportDirectory>
+                    <!-- Location of .jmx test plans -->
+                    <testFilesDirectory>src/test/jmeter</testFilesDirectory>
+                    
+                    <!-- Results format -->
+                    <resultsFileFormat>xml</resultsFileFormat>
+
+                    <!-- Generate reports -->
+                    <generateReports>true</generateReports>
+                    
+                    <!-- Optional: Add JMeter plugins -->
+                    <jmeterExtensions>
+                        <artifact>kg.apc:jmeter-plugins-casutg:2.10</artifact>
+                    </jmeterExtensions>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
+    <dependencies>
+        <!-- JUnit (required by Maven Surefire) -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
